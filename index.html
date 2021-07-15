@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Let´s dance, bloody Mary</title>
+    <!-- Stylesheets linked here -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Splash screen -->
+      <div id="splash-screen" class="container">
+        <img src="./images/BM_Logo.png" width="500" alt="logo" />
+        <button id="start-btn">Start!</button>
+      </div>
+
+      <!-- Canvas -->
+      <canvas id="my-canvas" width="600" height="600"></canvas>
+
+      <!-- Game over screen -->
+      <div id="gameover-screen" class="container">
+        <img
+          src="./images/istockphoto-993792306-612x612.jpeg"
+          width="500"
+          alt="game over"
+        />
+        <button id="restart-btn-gameover">Try Again!</button>
+      </div>
+
+      <!-- Game won screen -->
+      <div id="gamewon-screen" class="container">
+        <img
+          src="./images/winner-trophy-cup-prize-award-best-first-achievement-29309.png"
+          width="500"
+          alt="game won"
+        />
+        <button id="restart-btn-gamewon">Mix It Again!"</button>
+      </div>
+    </div>
+
+    <!-- Scripts linked here -->
+    <script src="./main.js"></script>
+    <script src="./classes/ingredient.js"></script>
+    <script src="./classes/player.js"></script>
+    <script src="./classes/game.js"></script>
+  </body>
+</html>
