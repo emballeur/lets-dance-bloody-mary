@@ -1,29 +1,36 @@
-  #my-canvas {
-    border: 1px solid grey;
-  }
-  
-  #start-btn, #restart-btn {
-    background-color: red;
-    color: white;
-    padding: 20px;
-    font-size: 20px;
-    margin-top: 40px
-  }
-  
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  #my-canvas {
-    display: none;
-  }
-  
-  #gameover-screen {
-    display: none;
-  }
+#my-canvas {
+  border: 1px solid grey;
+}
 
-  #gamewon-screen {
-    display: none;
-  }
+#start-btn,
+#restart-btn {
+  background-color: red;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+  margin-top: 40px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#my-canvas {
+  display: none;
+}
+
+#gameover-screen {
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#gamewon-screen {
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}

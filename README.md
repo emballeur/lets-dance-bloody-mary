@@ -61,3 +61,4 @@ in order of priority
 ## Links
 https://dribbble.com/shots/8790697-Bloody-Mary-Framework-Logo-Design/attachments/1010443?mode=media by Firas Safa
 https://www.google.com/search?q=logo+bloody+mary&rlz=1C5CHFA_enDE567DE614&sxsrf=ALeKk03-JXoLwzqbJzVV9s2jbss4svc3_Q:1625924539709&tbm=isch&source=iu&ictx=1&fir=iqvrfXW7OmMvDM%252CKdjEhCWPbYSkVM%252C_&vet=1&usg=AI4_-kQ3pkQKc8jEucqzwUNwSqwFjnYJtw&sa=X&ved=2ahUKEwiajvv00NjxAhXvhf0HHdhbDjAQ9QF6BAgJEAE&biw=1420&bih=766#imgrc=PcJCVSwpNnJkzM
+https://www.google.com/search?q=bar+background+game&rlz=1C5CHFA_enDE567DE614&sxsrf=ALeKk03mZKD5zFmKSMsWk-JGIyvuEFiaoA:1626200056375&tbm=isch&source=iu&ictx=1&fir=ouE0CCtkz0JzzM%252Cd0KUGzdmt0BifM%252C_&vet=1&usg=AI4_-kRW7PqDay4yD0hHoOPZw6Vd_XJr9Q&sa=X&ved=2ahUKEwjFksal0-DxAhVBzqQKHSgmD6MQ9QF6BAgNEAE#imgrc=ouE0CCtkz0JzzM

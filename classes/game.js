@@ -1,7 +1,7 @@
 class Game {
   constructor() {
     this.bg = new Image();
-    this.bg.src = "../images/Bar_Background.jpeg";
+    this.bg.src = "./images/Bar_Background.jpeg";
     this.player = new Glass();
     this.ingredientsArray = [];
     //this.ingredientsArray = [new Ingredient(), new Ingredient()];
@@ -14,7 +14,21 @@ class Game {
     this.gameLost = false;
     this.gameWon = false;
     this.ingredientGenerationSpeed = 5000;
-    this.levelSpeed = 10000;
+    this.levelSpeed = 5000;
+
+    this.levelImage = 100;
+    this.levelOne = new Image();
+    this.levelOne.src = "../images/SinaLevel1.png";
+    this.levelTwo = new Image();
+    this.levelTwo.src = "../images/SinaLevel2.png";
+    this.levelThree = new Image();
+    this.levelThree.src = "../images/SinaLevel3.png";
+
+    this.sound = new Audio();
+    this.sound.src = "../music.mp3";
+    this.sound.volume = 0.1;
+    this.sound.loop = true;
+    this.sound.play();
   }
 
   drawScore = () => {
@@ -25,6 +39,34 @@ class Game {
 
   drawIngredients = () => {
     this.ingredientsArray.forEach((ingredient) => ingredient.drawIngredient());
+  };
+
+  drawDrunkImage = () => {
+    if (this.score <= 3) {
+      ctx.drawImage(
+        this.levelOne,
+        canvas.width - this.levelImage,
+        canvas.height - this.levelImage - 75,
+        this.levelImage,
+        this.levelImage + 20
+      );
+    } else if (this.score >= 4 && this.score < 7) {
+      ctx.drawImage(
+        this.levelTwo,
+        canvas.width - this.levelImage,
+        canvas.height - this.levelImage - 75,
+        this.levelImage,
+        this.levelImage + 20
+      );
+    } else if (this.score >= 7) {
+      ctx.drawImage(
+        this.levelThree,
+        canvas.width - this.levelImage,
+        canvas.height - this.levelImage - 75,
+        this.levelImage,
+        this.levelImage + 20
+      );
+    }
   };
 
   removeIngredientsOnTheGround = () => {
@@ -43,7 +85,7 @@ class Game {
     if (this.score <= -10) {
       this.gameLost = true;
       canvas.style.display = "none";
-      gameOverScreen.style.display = "block";
+      gameOverScreen.style.display = "flex";
     }
   };
 
@@ -51,7 +93,7 @@ class Game {
     if (this.score >= 10) {
       this.gameWon = true;
       canvas.style.display = "none";
-      gameWonScreen.style.display = "block";
+      gameWonScreen.style.display = "flex";
     }
   };
 
@@ -104,6 +146,7 @@ class Game {
 
     this.player.drawGlass();
     this.drawScore();
+    this.drawDrunkImage();
 
     //this.ingredientsArray[0].drawIngredient();
     /*this.ingredientsArray.forEach(eachIngredient =>{
@@ -130,7 +173,7 @@ class Game {
         ingredientStamp = timestamp;
       }
       if (timestamp - levelStamp > this.levelSpeed) {
-        this.ingredientGenerationSpeed *= 0.5;
+        this.ingredientGenerationSpeed *= 0.9;
         levelStamp = timestamp;
       }
       this.gameLoop(ingredientStamp, levelStamp);
