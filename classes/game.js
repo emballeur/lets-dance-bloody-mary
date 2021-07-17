@@ -18,14 +18,14 @@ class Game {
 
     this.levelImage = 100;
     this.levelOne = new Image();
-    this.levelOne.src = "../images/SinaLevel1.png";
+    this.levelOne.src = "./images/SinaLevel1.png";
     this.levelTwo = new Image();
-    this.levelTwo.src = "../images/SinaLevel2.png";
+    this.levelTwo.src = "./images/SinaLevel2.png";
     this.levelThree = new Image();
-    this.levelThree.src = "../images/SinaLevel3.png";
+    this.levelThree.src = "./images/SinaLevel3.png";
 
     this.sound = new Audio();
-    this.sound.src = "../music.mp3";
+    this.sound.src = "./music.mp3";
     this.sound.volume = 0.1;
     this.sound.loop = true;
     this.sound.play();

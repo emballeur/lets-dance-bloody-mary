@@ -5,7 +5,7 @@ class Glass {
     this.width = 50;
     this.height = 60;
     this.image = new Image();
-    this.image.src = "../images/BM_Icon.png";
+    this.image.src = "./images/BM_Icon.png";
     this.speed = 5;
     this.acceleration = 0;
   }
